@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div class="container mt-3">
+      <!--three buttons that will fetch, create, or delete once it's clicked because event listeners were added to each button-->
+      <button id="fetch-button" class="btn btn-primary btn-lg">Fetch Prospects</button>
+      <button id="create-button" class="btn btn-success mx-3 btn-lg">Add Prospect</button>
+      <button id="delete-button" class="btn btn-danger btn-lg">Delete Prospect</button>
+      <!--divs contain input for each property of a prospect and their labels-->
+      <div class="mt-2">
+          <label for="player-name" class="form-label">Prospect's Name:</label>
+          <input type="text" class="form-control" id="player-name" placeholder="Nathan Aguilar">
+      </div>
+      <div class="mt-2">
+          <label for="player-star" class="form-label">Prospect's Star Rating:</label>
+          <input type="text" class="form-control" id="player-star" placeholder="5*">
+      </div>
+      <div class="mt-2">
+          <label for="player-position" class="form-label">Prospect's Position:</label>
+          <input type="text" class="form-control" id="player-position" placeholder="Quarterback">
+      </div>
+      <div class="mt-2">
+          <label for="player-home" class="form-label">Prospect's Hometown:</label>
+          <input type="text" class="form-control" id="player-home" placeholder="Los Angeles, CA">
+      </div>
+      <div class="mt-2">
+          <label for="player-style" class="form-label">Offense, Defense, Special Teams:</label>
+          <input type="text" class="form-control" id="player-style" placeholder="Offense">
+      </div>
+      <!--Div where the prospects will be located after being fetched or added-->
+      <div id="players-container"></div>
+  </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
